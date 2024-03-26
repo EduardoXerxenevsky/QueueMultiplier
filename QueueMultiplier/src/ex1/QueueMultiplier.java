@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package javaapplication1;
+package ex1;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -33,6 +33,9 @@ public class QueueMultiplier {
         System.out.println("Digite um numero: ");
         n = sc.nextInt();
         sc.close();
+        if(n<=0){
+            throw new RuntimeException("Número invalido");
+          }
         return n;
     }
 
